@@ -1,81 +1,87 @@
 <html lang="en-US">
-  <head>
-    <title>CHRISTINE RHEE | Engineering &amp; Design</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="Christine Rhee online" />
-    <meta name="author" content="Christine Rhee" />
-    <style>
-      body {
-        margin: 0;}
-      #bg {
-        background: #000000;
-        background-image: url("http://crhee.net/img/ledcube.JPG");
-        <!--background-size: contain;-->
-        <!--background-size: 1500px 1120px;-->
-        background-size: 20%;<!-- ???-->
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        margin: auto;
-        z-index: -1;}
-      <!--#bg img {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        margin: auto; 
-        min-width: 50%;
-        min-height: 50%;}-->
-      header {
-        opacity:.8;
-        padding:0;}
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;}
-      li {
-        float: left;}
-      a:link, a:visited {
-        background-color: #ffffff;
-        text-align: center;
-        font-family: Georgia,"Times New Roman",serif;
-        padding: 2;
-        text-decoration: none;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: bold;}
-      a:hover, a:active {
-        color: #008080;
-        text-decoration: line-through;
-        letter-spacing: 3px;}
-    </style>
-  </head>
- 
-  <body>
-    <div id="bg">
-    </div>
-  <!-- header -->
-    <div id="header">
-      <nav role="navigation" class="nav">
-        <div>
-          <ul>
-            <a href="http://crhee.net">CHRISTINE&nbsp;<strong>RHEE</strong></a>
-            <a href="http://crhee.net/projects">Projects</a>
-            <a href="http://crhee.net/art">Art</a>
-            <a href="http://crhee.net/aboutme">About Me</a>
-          </ul>
-        </div>
-      </nav>
-    </div>
-      
-  </body>
+    <head>
+        <title>CHRISTINE RHEE</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Christine Rhee online"/>
+        <meta name="author" content="Christine Rhee"/>
 
+        <style>
+            .flex_container {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+                text-align: center;
+            }
+            .flex-container > * {
+                padding: 15px;
+                -webkit-flex: 1 100%;
+                flex: 1 100%;
+            }
+            .article {
+                text-align: left;
+            }
+
+            header {}
+            footer {}
+
+            .nav {
+                background: black;
+            }
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .nav ul a {
+                text-decoration: none;
+            }
+
+            @media all and (min-width: 768 px) {
+                .nav {
+                    text-align: left;
+                    -webkit-flex: 1 auto;
+                    flex: 1 auto;
+                    -webkit-order: 1;
+                    order: 1;
+                }
+                .article {
+                    -webkit-flex: 5 0px;
+                    flex: 5 0px;
+                    -webkit-order: 2;
+                    order: 2;
+                }
+                footer {
+                    -webkit-order: 3;
+                    order: 3;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <div id="header">
+                <h1>CHRISTINE RHEE | Engineering &amp; Design</h1>
+            </div>
+
+            <nav role="navigation" class="nav">
+                <ul>
+                    <li><a href="http://crhee.net/homev2">CHRISTINE&nbsp;<strong>RHEE</strong></a></li>
+                    <li><a href="http://crhee.net/projectsv2">Projects</a></li>
+                    <li><a href="http://crhee.net/aboutmev2">About Me</a></li>
+                </ul>
+            </nav>
+
+            <article class="article">
+                <h1>Test home in article</h1>
+                <p>Test paragraph</p>
+            </article>
+
+            <footer>Contact info: </footer>
+
+        </div>
+
+        <div id="bg">
+        </div>
+    </body>
 </html>
