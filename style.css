@@ -4,55 +4,74 @@
   padding: 0px;
   margin: 0px;
   }
-.home-header {
-  color: white;
+/*.home-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  
   justify-content: flex-end;
-  align-items: center; /* align vertical */
+  color: white;
+  align-items: center;
   height: 50px;
   background: #191919;
   padding: 0px;
+  flex: none;
   }
 .home-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  
+  -webkit-flex-flow: row wrap;
+  
+  justify-content: center;
+  align-items: center;
   height: 0px;
   background: #F5F5F5;
   padding: 0px;
+  flex: none;
   }
-.home-content {
+.home-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex: 1;
-  background: white;
-  }
-.home-columns {
-  display: flex;
-  flex: 1;
+  
+  -webkit-flex-flow: row wrap;
+  
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex: none;
   }
 .home-main {
-  flex: 1;
+  flex: none;
   order: 2;
   padding: 0.5em;
   text-align: center;
-  justify-content: center; /* align horizontal */
+  justify-content: center;
   }
 .home-left-column {
-  width: 15%;
+  flex: none;
   order: 1;
-  background: #F5F5F5;
+  background: white;
   }
 .home-right-column {
-  width: 20%;
+  flex: none;
   order: 3;
   background: white;
   }
-
-.home-content, .home-left-column, .home-right-column {
+.home-main, .home-left-column, .home-right-column {
   padding: 0.75em;
   overflow-x: hidden;
   }
-
+*/
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -62,23 +81,22 @@ html, body {
   margin: 0px;
   }
 * {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   }
 h1, h2 {
   margin: 0 0 1em 0;
   }
 h1 {
-  font: Source Sans Pro;
+  font: Roboto;
   font-size: 1em;
   }
 h2 {
-  font: Source Sans Pro;
+  font: Roboto;
   font-size: 1em;
   }
 p {
-  font: Source Sans Pro;
+  font: Roboto;
   font-size: 1em;
-  letter-spacing: 0.5px;
   line-height: 200%;
   color: #4d4d4d;
   margin: 0 0 1em 0;
@@ -98,5 +116,5 @@ img {
   min-width: 200px;
   max-width: 100%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  align: right;
+  align: left;
   }
